@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotosFavoritas</title>
+</head>
+<body>
+  <a name="top" id="top"></a>
+
+  <header class="title">
+    <h1>HOLA</h1>
+    <p>Bienvenido a mi pagina web</p>
+  </header>
+
+  <section id="formulario">
+    <center>
+      <h2 class="subtitle">Motos</h2>
+    </center>
+
+    <!-- Primera Moto -->
+    <div class="moto">
+      <center>
+        <h3>Ducatti Panigale V4</h3>
+        <img src="https://cdn.motor1.com/images/mgl/Kbb3zN/s1/2023-ducati-panigale-v4---front-right.webp" alt="Ducatti" class="imagen-moto" />
+        <p>Ducatti Panigale V4</p>
+        <iframe
+          src="https://www.youtube.com/embed/wtlmbJsVIJc"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+        <p>Demostración</p>
+        <p>Descripción: La Ducati Panigale V4 es una motocicleta deportiva de alto rendimiento fabricada por Ducati.<br>
+        Está equipada con un motor V4 de 1.103 cc que produce una potencia impresionante de 214 caballos de fuerza, <br>
+        lo que le permite alcanzar velocidades máximas superiores a los 300 km/h.
+        </p>
+      </center>
+    </div>
+
+    <!-- Segunda Moto -->
+    <div class="moto">
+      <center>
+        <h3>Kawasaki Ninja H2R</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Kawasaki_Ninja_H2R_Seattle_motorcycle_show.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="Kawasaki Ninja H2R" class="imagen-moto" />
+        <p>Kawasaki Ninja H2R</p>
+        <iframe
+          src="https://www.youtube.com/embed/ppzrIb1Igso"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+        <p>Demostración</p>
+        <p>Descripción: La Kawasaki Ninja H2R es una motocicleta deportiva de alto rendimiento fabricada por Kawasaki.<br>
+        Está equipada con un motor de cuatro cilindros en línea sobrealimentado de 998 cc que produce una potencia impresionante de 310 caballos de fuerza, <br>
+        lo que le permite alcanzar velocidades máximas superiores a los 400 km/h.
+        </p>
+      </center>
+    </div>
+
+    <!-- Tercera Moto -->
+    <div class="moto">
+      <center>
+        <h3>BMW M1000RR</h3>
+        <img src="https://soymotero.net/wp-content/uploads/2020/09/bmw_m1000rr_ok.jpg"
+        alt="BMW M1000RR" class="imagen-moto" />
+        <p>BMW M1000RR</p>
+        <iframe
+          src="https://www.youtube.com/embed/6aSUg1aYJ3o"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+        <p>Demostración</p>
+        <p>Descripción: La BMW M1000RR es una motocicleta deportiva de alto rendimiento fabricada por BMW.<br>
+        Está equipada con un motor de cuatro cilindros en línea de 999 cc que produce una potencia impresionante de 212 caballos de fuerza, <br>
+        lo que le permite alcanzar velocidades máximas superiores a los 300 km/h.
+        </p>
+      </center>
+    </div>
+  </section>
+
+  <section id="solicitud">
+    <h2 class="subtitle">Formulario solicitar moto</h2>
+    <form>
+      <div class="form-group">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre" />
+      </div>
+
+      <div class="form-group">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido" id="Apellido" />
+      </div>
+
+      <div class="form-group">
+        <label for="Edad">Edad:</label>
+        <input type="number" name="Edad" id="Edad" />
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email" />
+      </div>
+
+      <div class="form-group">
+        <label>Género:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Options">Moto de interés:</label>
+        <input list="Options" id="Options" />
+        <datalist id="Options">
+          <option value="Ducatti Panigale V4"></option>
+          <option value="Kawasaki Ninja H2R"></option>
+          <option value="BMW M1000RR"></option>
+        </datalist>
+      </div>
+
+      <div class="form-group">
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" />
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label><input type="checkbox" name="correct" value="correct" /> Correct</label>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <section id="favoritas">
+    <h2 class="subtitle">Motos favoritas</h2>
+    <p>La siguiente tabla muestra las motos favoritas de los usuarios:</p>
+    <ol>
+      <li>
+        Ducatti Panigale V4 —
+        link de compra: <a href="https://www.ducati.com/us/en/bikes/panigale/panigale-v4">Ducatti Panigale V4</a>
+      </li>
+      <li>
+        Kawasaki Ninja H2R —
+        link de compra: <a href="https://www.kawasaki.com/motorcycle/ninja/ninja-h2r">Kawasaki Ninja H2R</a>
+      </li>
+      <li>
+        BMW M1000RR —
+        link de compra: <a href="https://www.bmw-motorrad.com/en/models/sport/m1000rr.html">BMW M1000RR</a>
+      </li>
+    </ol>
+  </section>
+
+  <center>
+    <a href="#top"><strong>Go to Top</strong></a>
+  </center>
+</body>
+</html>
