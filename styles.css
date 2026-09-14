@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ===== BASE = CELULAR ===== */
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: #eef1f4;
+  color: #263238;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  padding: 15px;
+  text-align: center;
+  color: #37474f;
+  background-color: white;
+}
+
+.subtitle {
+  color: #455a64;
+  text-align: center;
+}
+
+.moto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #78909c;
+  color: white;
+  background-color: #546e7a;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.moto:hover {
+  transform: translateY(-4px);
+}
+
+.imagen-moto {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.moto iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  margin-top: 10px;
+}
+
+#formulario {
+  margin-top: 20px;
+}
+
+form {
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #37474f;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #90a4ae;
+  border-radius: 5px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #546e7a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #455a64;
+}
+
+a {
+  color: #1565c0;
+}
+
+a:hover {
+  color: #0d47a1;
+}
+
+#favoritas ol {
+  background-color: white;
+  padding: 20px 20px 20px 40px;
+  border-radius: 8px;
+}
+
+/* ===== PC / pantallas grandes ===== */
+@media (min-width: 768px) {
+  body {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .imagen-moto {
+    width: 25%;
+  }
+
+  .moto iframe {
+    width: 40%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+}
